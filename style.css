@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     background-color: hsl(30, 54%, 90%);
     display: flex;
@@ -14,7 +18,8 @@ body{
 }
 
 .container{
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
     background-color: hsl(0, 0%, 100%);
     padding: 35px;
     border-radius: 20px;
