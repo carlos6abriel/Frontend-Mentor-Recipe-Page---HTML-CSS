@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -39,7 +40,7 @@ img{
 .text p{
     font-family: 'Outfit';
     color: hsl(24, 5%, 18%);
-    margin: 18px 0px 30px 0px;
+    margin: 16px 0px 30px 0px;
 }
 
 .preparation{
@@ -168,7 +169,7 @@ hr{
 .nutrition p{
     font-family: 'Outfit';
     color: hsl(24, 5%, 18%);
-    margin: 18px 0px 30px 0px;
+    margin: 16px 0px 15px 0px;
 }
 
 .nutrition-table{
@@ -194,4 +195,28 @@ td span{
     font-family: 'Outfit';
     color: hsl(14, 45%, 36%);
     font-weight: 700;
+}
+
+@media (max-width:750px){
+    body{
+        margin: 0px;
+    }
+    .container{
+        border-radius: 0px;
+        padding: 0px;
+    }
+    img{
+        border-radius: 0px;
+    }
+    .text, .preparation, .ingredients, .instructions, .nutrition, .attribution, hr{
+        margin: 30px 30px;
+    }
+    .text h1{
+        font-size: 2.1rem;
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+    .text p, .preparation-time-list li, .instructions-list li, .nutrition p{
+        line-height: 1.4;
+    }
 }
